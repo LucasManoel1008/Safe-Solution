@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.montserra {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+.elements-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.7rem;
+    align-items: center;
+}
+.elements-header img{
+    margin-top: 1.7rem;
+}
+
+.main-info{
+    
+}
+
+.firstImage{
+    max-width: 100%;
+}
