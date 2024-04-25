@@ -1,7 +1,22 @@
+/*palheta de cores*/
+:root{
+    --blue: #2B2D42;
+    --blue2: #8D99AE;
+    --blue3:#234063;
+    --blue4:#1E2D3F;
+    --white: #EDF2F4;
+
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
     
+}
+body{
+    font-family: "montserrat";
 }
 .montserra {
     font-family: "Montserrat", sans-serif;
@@ -20,10 +35,50 @@
     margin-top: 1.7rem;
 }
 
-.main-info{
-    
-}
 
-.firstImage{
-    max-width: 100%;
+
+.main-image{
+    margin: 0;
+    left: -5px ;
+    width: 110%;
+    position: relative;
+}
+.image-text{
+    position: absolute;
+    top: 1px;
+    margin-left:1rem ;
+    font-size: 4vw;
+}
+.image-text2{
+    color: var(--blue3)
+}
+.btn-main{
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    width: 40vw;
+    height: 6vh;
+    font-size: 5vw;
+    cursor: pointer;
+    background-color: var(--blue4);
+    border: transparent;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: bold;
+    transition: background-color 0.2s ease-in;
+}
+.btn-main:hover{
+    background-color: var(--blue3);
+    transition: background-color 0.2s ease-in;
+}
+.text-body{
+    display: flex;
+    flex-direction: column;
+}
+.text-body .firstText h1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
 }
