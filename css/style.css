@@ -18,12 +18,7 @@
 body{
     font-family: "montserrat";
 }
-.montserra {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
+
 .elements-header{
     display: flex;
     flex-direction: row;
@@ -40,7 +35,7 @@ body{
 .main-image{
     margin: 0;
     left: -5px ;
-    width: 110%;
+    width: 100%;
     position: relative;
 }
 .image-text{
@@ -64,21 +59,26 @@ body{
     border: transparent;
     border-radius: 20px;
     color: var(--white);
-    font-weight: bold;
+    font-weight: 800;
     transition: background-color 0.2s ease-in;
 }
 .btn-main:hover{
     background-color: var(--blue3);
     transition: background-color 0.2s ease-in;
 }
+
 .text-body{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-.text-body .firstText h1{
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    
+.Text h1{
+    margin-bottom: 0.8rem;
+}
+.Text p, .Text ul{
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.list ul li{
+    list-style: square;
 }
