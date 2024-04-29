@@ -1,4 +1,4 @@
-/*palheta de cores*/
+/*palheta de cores do site, para usar basta aplicar color: var("nome da var")*/
 :root{
     --blue: #2B2D42;
     --blue2: #8D99AE;
@@ -9,7 +9,8 @@
 
 }
 
-
+/* formata o site para todos ficarem em uma posição "Reset", alguns navegadores possuem um
+    CSS por padrão, isso remove eles*/
 *{
     margin: 0;
     padding: 0;
