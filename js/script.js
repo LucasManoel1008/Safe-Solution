@@ -11,3 +11,14 @@ function abrirNav(){
 function fecharNav(){
     document.getElementById('menuOculto').style.marginLeft = "-100vh";
 }
+
+function FAQ(){
+    var menu = document.getElementById('FAQ-Container');
+
+    if (menu.style.display === 'none'){
+    menu.style.display ='block';
+    }
+    else{
+        menu.style.display = 'none';
+    }
+}

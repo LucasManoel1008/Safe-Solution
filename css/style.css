@@ -145,7 +145,54 @@ body{
     color: var(--blue3);
     padding: 0.5rem;
 }
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8vh 0 8vh 0;
+}
+.FAQ h1{
+    color: var(--blue3);
+
+}
+.FAQ-menu{
+    width: 70%;
+    background-color: #234063;
+    margin-top: 4rem;
+    text-align: center;
+    border-radius: 20px 20px 0  0;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+.FAQ-menu h1{
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+.FAQ-menu img{
+    position: relative;
+    left: 30px;
+    top: 8px;
+}
+.FAQ-Container{
+    width: 70%;
+    background-color: #CCCDCD;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 20px 0;
+    
+
+}
+.footer-menu{
+    width: 70%;
+    height: 3vh;
+    background-color: var(--blue3);
+    border-radius: 0 0 20px 20px;
+}
 .footer{
+    margin-top: 3vh;
     width: 100%;
     background-color: var(--blue3);
     display: flex;
