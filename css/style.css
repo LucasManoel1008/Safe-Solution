@@ -19,6 +19,11 @@
 body{
     font-family: "montserrat";
 }
+#active{
+    border: 1px solid var(--blue3);
+    background-color: var(--blue3);
+    color: white;
+}
 
 .header .menuOculto{
     font-weight: bold;
@@ -30,12 +35,20 @@ body{
     margin: 1rem;
 
 }
+#logo-header img{
+    width: 45vw;
+}
+.elementsHeader-desktop{
+    display: none;
+}
 .menuOculto a{
     text-decoration: none;
     color: #fff;
     padding: 8px 8px 8px 32px;
     font-size: 25px;
     display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
     transition: 0.4s;
 }
 .menuOculto a:hover{
@@ -48,6 +61,7 @@ body{
     right: 25px;
     background-color: transparent;
     border: none;
+
     font-size: 32px;
     color: var(--white);
     cursor: pointer;
@@ -73,7 +87,7 @@ body{
     transition: 0.5s;
     padding-top: 60px;
     transition: border 0.5s;
-    
+    text-align: left;
 }
 
 #elements-header{
@@ -102,8 +116,8 @@ body{
     top: 60%;
     left: 52%;
     width: 40vw;
-    height: 6vh;
-    font-size: 5vw;
+    height: 8vw;
+    font-size: 4vw;
     cursor: pointer;
     background-color: var(--blue4);
     border: transparent;
@@ -121,7 +135,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 4vw;
 }
 .Text h1{
     margin-top: 3rem;
@@ -136,24 +150,27 @@ body{
 }
 .list{
     margin: 3rem;
+    
 }
 .list li{
-    padding: 10px;
-    
+    text-align: center;
 }
 .list li::marker{
     color: var(--blue3);
-    padding: 0.5rem;
+}
+.icon-main-text{
+    width: 15vw;
 }
 
 .FAQ{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8vh 0 8vh 0;
+    margin: 8vw 0 8vw 0;
 }
 .FAQ h1{
     color: var(--blue3);
+    font-size: 6vw;
 
 }
 .FAQ-menu{
@@ -164,20 +181,23 @@ body{
     border-radius: 20px 20px 0  0;
     align-items: center;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 4vw;
     border: none;
 }
 .FAQ-menu h1{
     color: #fff;
     padding: 20px 0 20px 0;
+    font-size: 4vw;
 }
 .FAQ-menu img{
     position: relative;
     left: 30px;
     top: 8px;
+    width: 2rem;
 }
 .FAQ-Container{
-    width: 70%;
+    font-size: 4vw;
+    width: 32rem;
     background-color: #CCCDCD;
     text-align: center;
     align-items: center;
@@ -186,7 +206,7 @@ body{
 
 }
 .footer-menu{
-    width: 70%;
+    width: 32rem;
     height: 3vh;
     background-color: var(--blue3);
     border-radius: 0 0 20px 20px;
@@ -227,3 +247,74 @@ body{
     height: 7.4vh;
 }
 
+@media screen and (min-width:720px) {
+    .elementsHeader-desktop{
+        display: inline;
+        margin: 0 0 0 2%;
+    }
+    #active{
+        padding: 7px;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+    .elementsHeader-desktop a{
+        text-decoration: none;
+        color: var(--blue3);
+        font-weight: bolder;
+        margin-right: 20px;
+    
+    }
+    .btn-main{
+        width: 25vw;
+        height: 7vw;
+        font-size: 3vw;
+        left: 70%;
+        top: 70%;
+    }
+    .text-body{
+        font-size: 2vw;
+    }
+    .icon-main-text{
+        width: 8vw;
+    }
+
+    #logo-header img{
+        width: 15em;
+    }
+    .image-text{
+        font-size: 3.5vw;
+    }
+    #elements-header{
+        display: none;
+    }
+    .list li{
+        margin: 0 0 10px 100px;
+        
+    }
+    .FAQ h1{
+        font-size: 3.5vw;
+    }
+    .FAQ-menu{
+        width: 40vw;
+    }
+    .FAQ-menu h1{
+        font-size: 3vw;
+    }
+    .FAQ-Container {
+        font-size: 2vw;
+    }
+    .elements-footer{
+
+    }
+    .elements-footer ul{
+        flex-direction: row;
+        align-items: normal;
+        margin: 3rem 0 2rem 15rem;
+        
+    }
+    .elements-footer ul a{
+        margin-right: 4rem;
+
+    }
+
+}
