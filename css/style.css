@@ -40,7 +40,7 @@ body{
 
 }
 #logo-header img{
-    width: 300px;
+    width: 200px;
 }
 .elementsHeader-desktop{
     display: none;
@@ -65,7 +65,6 @@ body{
     right: 25px;
     background-color: transparent;
     border: none;
-
     font-size: 32px;
     color: var(--white);
     cursor: pointer;
@@ -103,14 +102,20 @@ body{
 .main-image{
     margin: 0;
     left: -5px ;
-    width: 100%;
+    width: 100.4vw;
+    height: 350px;
     position: relative;
 }
+.main-image img{
+    width: 100.46vw;
+}
+
+    
 .image-text{
     position: absolute;
-    top: 1px;
+    top: 5%;
     margin-left:1rem ;
-    font-size: 4vw;
+    font-size: 1rem;
 }
 .image-text2{
     color: var(--blue3)
@@ -118,10 +123,10 @@ body{
 .btn-main{
     position: absolute;
     top: 60%;
-    left: 52%;
-    width: 40vw;
-    height: 8vw;
-    font-size: 4vw;
+    left: calc(100% - 250px);
+    width: calc(200px + 1rem);
+    height: 50px;
+    font-size: 1.5rem;
     cursor: pointer;
     background-color: var(--blue4);
     border: transparent;
@@ -139,18 +144,18 @@ body{
 .text-body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    gap: 20px;
-    align-self: center;
+    gap: 30px;
     text-align: center;
-    margin: 30px auto;
+    margin: 50px auto;
     font-size: 15px;
     max-width: 80%;
+    justify-content: space-between;
 
 }
 .Text{
-    margin-bottom: 30px;
+    margin: 0 auto;
     border: dashed 6px var(--blue4);
-    max-width: 400px;
+    max-width: 80%;
 }
 .Text h1{
     margin-top: 3rem;
@@ -221,10 +226,9 @@ body{
 }
 
 
-/*@media screen and (min-width:720px) {
+@media screen and (min-width:720px) {
     .elementsHeader-desktop{
         display: inline;
-        margin: 0 0 0 2%;
     }
     #active{
         padding: 7px;
@@ -235,47 +239,25 @@ body{
         text-decoration: none;
         color: var(--blue3);
         font-weight: bolder;
-        margin-right: 20px;
+        margin-right: 10px;
+        
     
     }
-    .image-text{
-        font-size: 3.5vw;
-    }
-    .btn-main{
-        width: 25vw;
-        height: 7vw;
-        font-size: 3vw;
-        left: 70%;
-        top: 70%;
-    }
-    .text-body{
-        font-size: 2vw;
-    }
-    .icon-main-text{
-        width: 8vw;
-    }
-
-    #logo-header img{
-        width: 15em;
-    }
-    
     #elements-header{
         display: none;
     }
-    .list li{
-        margin: 0 0 10px 100px;
-        
+    .image-text{
+        font-size: 1.7rem ;
     }
     .elements-footer ul{
+        display: flex;
         flex-direction: row;
-        align-items: normal;
         justify-content: center;
-        
+        align-items: normal;
+        margin: 20px 20px;
     }
     .elements-footer ul a{
-        margin-right: 4rem;
-
+        margin: 0 50px 20px 50px;
     }
 
 }
-*/
