@@ -5,9 +5,13 @@
     --blue3:#234063;
     --blue4:#1E2D3F;
     --white: #EDF2F4;
-
-
 }
+/*Formatações para evitar css-inline*/
+.blue2{color: #234063}
+.text-underline{text-decoration: underline;}
+.bold{font-weight: bolder;}
+
+/*Fim das formatações*/
 
 /* formata o site para todos ficarem em uma posição "Reset", alguns navegadores possuem um
     CSS por padrão, isso remove eles*/
@@ -131,14 +135,26 @@ body{
     transition: background-color 0.2s ease-in;
 }
 
+
 .text-body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 20px;
+    align-self: center;
     text-align: center;
-    font-size: 4vw;
+    margin: 30px auto;
+    font-size: 15px;
+    max-width: 80%;
+
+}
+.Text{
+    margin-bottom: 30px;
+    border: dashed 6px var(--blue4);
+    max-width: 400px;
 }
 .Text h1{
     margin-top: 3rem;
+    color: #234063;
 }
 .Text p, .Text ul{
     font-weight: 700;
@@ -149,62 +165,19 @@ body{
     margin-top: 1rem;
 }
 .list{
-    margin: 3rem;
-    
+    list-style-position: inside;
 }
-.list li{
-    text-align: center;
+.list li {
+    margin-bottom: 20px;
 }
 .list li::marker{
     color: var(--blue3);
 }
 .icon-main-text{
-    width: 15vw;
+    width: 90px;
 }
 
-.FAQ{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 8vw 0 8vw 0;
-}
-.FAQ h1{
-    color: var(--blue3);
-    font-size: 6vw;
 
-}
-.FAQ-menu{
-    width: 70%;
-    background-color: #234063;
-    margin-top: 4rem;
-    text-align: center;
-    border-radius: 20px 20px 0  0;
-    align-items: center;
-    cursor: pointer;
-    font-size: 4vw;
-    border: none;
-}
-.FAQ-menu h1{
-    color: #fff;
-    padding: 20px 0 20px 0;
-    font-size: 4vw;
-}
-.FAQ-menu img{
-    position: relative;
-    left: 30px;
-    top: 8px;
-    width: 2rem;
-}
-.FAQ-Container{
-    font-size: 4vw;
-    width: 32rem;
-    background-color: #CCCDCD;
-    text-align: center;
-    align-items: center;
-    padding: 10px 0 20px 0;
-    
-
-}
 .footer-menu{
     width: 32rem;
     height: 3vh;
@@ -219,7 +192,7 @@ body{
     flex-direction: column;
     height: 100%;
     color: var(--white);
-
+    font-size: 15px;
 }
 .elements-footer a, .elements-footer ul{
     display: flex;
@@ -237,17 +210,18 @@ body{
 .icons-footer{
     display: flex;
     text-decoration: none;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 2rem;
     align-items: center;
+    justify-content: center;
 }
 .icons-footer img{
-    padding: 1rem;
-    width: 7.4vw;
-    height: 7.4vh;
+    margin-right: 30px;
+    width: clamp(30px,50%,80px);
 }
 
-@media screen and (min-width:720px) {
+
+/*@media screen and (min-width:720px) {
     .elementsHeader-desktop{
         display: inline;
         margin: 0 0 0 2%;
@@ -263,6 +237,9 @@ body{
         font-weight: bolder;
         margin-right: 20px;
     
+    }
+    .image-text{
+        font-size: 3.5vw;
     }
     .btn-main{
         width: 25vw;
@@ -281,9 +258,7 @@ body{
     #logo-header img{
         width: 15em;
     }
-    .image-text{
-        font-size: 3.5vw;
-    }
+    
     #elements-header{
         display: none;
     }
@@ -291,25 +266,10 @@ body{
         margin: 0 0 10px 100px;
         
     }
-    .FAQ h1{
-        font-size: 3.5vw;
-    }
-    .FAQ-menu{
-        width: 40vw;
-    }
-    .FAQ-menu h1{
-        font-size: 3vw;
-    }
-    .FAQ-Container {
-        font-size: 2vw;
-    }
-    .elements-footer{
-
-    }
     .elements-footer ul{
         flex-direction: row;
         align-items: normal;
-        margin: 3rem 0 2rem 15rem;
+        justify-content: center;
         
     }
     .elements-footer ul a{
@@ -318,3 +278,4 @@ body{
     }
 
 }
+*/
