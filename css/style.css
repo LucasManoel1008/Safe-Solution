@@ -13,91 +13,6 @@
 
 /*Fim das formatações*/
 
-/* formata o site para todos ficarem em uma posição "Reset", alguns navegadores possuem um
-    CSS por padrão, isso remove eles*/
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-body{
-    font-family: "montserrat";
-}
-#active{
-    border: 1px solid var(--blue3);
-    background-color: var(--blue3);
-    color: white;
-}
-
-.header .menuOculto{
-    font-weight: bold;
-}
-.elements-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
-
-}
-#logo-header img{
-    width: 200px;
-}
-.elementsHeader-desktop{
-    display: none;
-}
-.menuOculto a{
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
-    display: block;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    transition: 0.4s;
-}
-.menuOculto a:hover{
-    color: var(--blue2);
-    background-color: #234063;
-}
-.btn-close{
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    background-color: transparent;
-    border: none;
-    font-size: 32px;
-    color: var(--white);
-    cursor: pointer;
-    padding: 2px;
-    width: 40px;
-    transition: 0.5s;
-}
-.btn-close:hover{
-    background-color: #234063;
-    border-radius: 10px;
-    transition: border 0.5s;
-
-}
-.menuOculto{
-    height: 100%;
-    width: 300px;
-    margin-left: -100vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #1E2D3F;
-    transition: 0.5s;
-    padding-top: 60px;
-    transition: border 0.5s;
-    text-align: left;
-}
-
-#elements-header{
-    margin-left: 16px;
-}
-
-
 
 .main-image{
     margin: 0;
@@ -106,6 +21,7 @@ body{
     height: 350px;
     position: relative;
 }
+
 .main-image img{
     width: 100.46vw;
 }
@@ -115,7 +31,7 @@ body{
     position: absolute;
     top: 5%;
     margin-left:1rem ;
-    font-size: 1rem;
+    font-size: clamp(1em + 1vw,1vw, 4rem);
 }
 .image-text2{
     color: var(--blue3)
@@ -126,7 +42,7 @@ body{
     left: calc(100% - 250px);
     width: calc(200px + 1rem);
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     cursor: pointer;
     background-color: var(--blue4);
     border: transparent;
@@ -154,7 +70,7 @@ body{
 }
 .Text{
     margin: 0 auto;
-    border: dashed 6px var(--blue4);
+    border: dashed 3px var(--blue4);
     max-width: 80%;
 }
 .Text h1{
@@ -183,81 +99,3 @@ body{
 }
 
 
-.footer-menu{
-    width: 32rem;
-    height: 3vh;
-    background-color: var(--blue3);
-    border-radius: 0 0 20px 20px;
-}
-.footer{
-    margin-top: 3vh;
-    width: 100%;
-    background-color: var(--blue3);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: var(--white);
-    font-size: 15px;
-}
-.elements-footer a, .elements-footer ul{
-    display: flex;
-    text-decoration: none;
-    flex-direction: column;
-    color: var(--white);
-    margin-bottom: 2rem;
-    align-items: center;
-    
-}
-.elements-footer{
-
-    margin: 1rem;
-}
-.icons-footer{
-    display: flex;
-    text-decoration: none;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-.icons-footer img{
-    margin-right: 30px;
-    width: clamp(30px,50%,80px);
-}
-
-
-@media screen and (min-width:720px) {
-    .elementsHeader-desktop{
-        display: inline;
-    }
-    #active{
-        padding: 7px;
-        border-radius: 10px;
-        opacity: 0.8;
-    }
-    .elementsHeader-desktop a{
-        text-decoration: none;
-        color: var(--blue3);
-        font-weight: bolder;
-        margin-right: 10px;
-        
-    
-    }
-    #elements-header{
-        display: none;
-    }
-    .image-text{
-        font-size: 1.7rem ;
-    }
-    .elements-footer ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: normal;
-        margin: 20px 20px;
-    }
-    .elements-footer ul a{
-        margin: 0 50px 20px 50px;
-    }
-
-}

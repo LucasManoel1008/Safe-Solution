@@ -1,0 +1,67 @@
+<!--Para usar isso, crie um documento html na pasta principal e copie o html dessa página
+    para a nova. Não altere o padrão.css.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Solutions</title>
+    <link rel="stylesheet" href="padronizacao/padrao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <header class="header" id="header">      
+        <!--Esse aqui é nosso menu lateral, falta deixá-lo responsivo-->
+        <div class="menuOculto" id="menuOculto">
+            <button class="btn-close" onclick="fecharNav()">&times;</button>
+            <a href="" id="active">AJUDA</a>
+            <a href="">SERVIÇOS</a>
+            <a href="">SOBRE NÓS</a>
+            <a href="">LOGIN/SIGN UP</a>
+        </div>
+        <div class="elements-header">
+            <!--Botão de abrir menu e logo-->
+            <img src="img/Menu.svg" alt="" id="elements-header" style="font-size: 30px; cursor: pointer;" onclick="abrirNav()">
+            <div class="elementsHeader-desktop">
+                <a href="" id="active">AJUDA</a>
+                <a href="">SERVIÇOS</a>
+                <a href="">SOBRE NÓS</a>
+                <a href="">LOGIN/SIGN UP</a>
+            </div>
+            <a href="" id="logo-header"><img src="img/Logo.png" alt=""></a>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="elements-footer">
+            <ul>
+                <a href=""><h3>Sobre Nós</h3></a>
+                <a href=""><h3>Política de Privacidade</h3></a>
+                <a href=""><h3>Serviços</h3></a>
+                <h3>Redes sociais</h3>
+            </ul>
+        </div>
+
+            <ul class="icons-footer">
+                <a href=""><img src="img/zap.svg" alt="Whatsapp"></a>
+                <a href=""><img src="img/x.svg" alt=""></a>
+                <a href=""><img src="img/Facebook.svg" alt=""></a>
+                <a href=""><img src="img/Instagram.svg" alt=""></a>
+                <a href=""><img src="img/LinkedIn.svg" alt=""></a>
+            </ul>
+
+    </footer>
+
+
+
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>
