@@ -142,7 +142,6 @@
 }
 .FAQ{
     width: 100%;
-    background-color: var(--white);
     
 
 }
@@ -158,7 +157,6 @@
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
-    background-color: var(--white);
     box-shadow: 6px 6px 10px -1px rgba(45, 46, 66, 0.8),
                 -6px -6px 10px -1px rgba(35, 64, 99, 0.40) ;
 }
@@ -195,4 +193,57 @@
 }
 .FAQ-container li input[type="radio"]:checked+ label::before{
     content: "-";
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    color: var(--blue3);
+    margin: 0 40px;
+    align-items: center;
+    gap: 50px;
+}
+.inputArea{
+    align-self: flex-start;
+    font-size: 20px;
+    
+}
+.inputArea input{
+    width: 250px;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid var(--blue2);
+    padding: 2px;
+    border-radius: 5px;
+}
+.textarea{
+    align-self: flex-start;
+}
+.textarea label{
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.textarea textarea{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--blue2);
+}
+.forms input[type="reset"]{
+    align-self: flex-start;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 350px;
+    background-color: var(--blue4);
+    border: 1px solid var(--blue4);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.forms input[type="reset"]:hover{
+    background-color: var(--blue3);
+    border: 1px solid var(--blue3);
+    color: #8e9aaf;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;   
 }
