@@ -191,16 +191,19 @@
     content: "-";
 }
 .forms{
-    display: flex;
-    flex-direction: column;
     color: var(--blue3);
     margin: 0 40px;
     align-items: center;
     gap: 50px;
+    text-align: center;
 }
-.inputArea{
-    align-self: flex-start;
-    font-size: 20px; 
+.forms-data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+}
+.forms-data input{
+    margin: 20px 0;
 }
 .inputArea input{
     width: 250px;
@@ -210,23 +213,11 @@
     padding: 2px;
     border-radius: 5px;
 }
-.textarea{
-    align-self: flex-start;
-}
-.textarea label{
-    float: left;
-    font-size: 20px;
-    margin-right: 10px;
-}
-.textarea textarea{
-    width: 250px;
-    border-radius: 5px;
-    border: 1px solid var(--blue2);
-}
+
+
 .forms input[type="reset"]{
-    align-self: flex-start;
-    width: 150px;
     padding: 10px;
+    width: 150px;
     font-size: 20px;
     margin-left: calc(100% - 200px);
     background-color: var(--blue4);
