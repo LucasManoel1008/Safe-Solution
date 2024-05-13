@@ -23,6 +23,26 @@ body, html{
     font-family: "montserrat";
     height: 100%;
 }
+#botaoScroll{
+    position: fixed;
+    border: none;
+    background-color: var(--blue2);
+    padding:7px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 2em;
+    z-index: 1000;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s;
+    scroll-behavior: smooth;
+}
+#botaoScroll:hover{
+    background-color: #234063;
+    transition: all 0.2s;
+}
 #active{
     border: 2px solid var(--blue3);
     background-color: var(--blue3);
@@ -145,26 +165,25 @@ body, html{
     }
     #active{
         padding: 7px;
-        border-radius: 10px;
+        border-radius: 4px;
         opacity: 0.8;
         color: var(--blue3);
         background-color: transparent;
-        border: 2px dashed var(--blue);
+        border: 2px solid var(--blue);
     }
     .elementsHeader-desktop a{
         text-decoration: none;
         color: var(--blue3);
         font-weight: bolder;
         margin-right: 10px;
-    
+        padding:7px;
     }
     .elementsHeader-desktop a:hover{
-        border-radius: 10px;
         opacity: 0.8;
+        border-radius: 4px;
         color: var(--blue3);
         background-color: transparent;
-        border: 2px dashed var(--blue);
-        padding: 7px;
+        border: 1px solid var(--blue);
     }
     #elements-header{
         display: none;
