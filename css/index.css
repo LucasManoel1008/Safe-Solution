@@ -155,6 +155,7 @@
     border-radius: 8px;
     box-shadow: 6px 6px 10px -1px rgba(45, 46, 66, 0.8),
                 -6px -6px 10px -1px rgba(35, 64, 99, 0.40) ;
+                cursor: pointer;
 }
 .FAQ-container li label{
     display: flex;
@@ -190,32 +191,55 @@
 .FAQ-container li input[type="radio"]:checked+ label::before{
     content: "-";
 }
+
+/* Formularios */
 .forms{
-    color: var(--blue3);
-    margin: 0 40px;
-    align-items: center;
-    gap: 50px;
     text-align: center;
+    color: var(--blue3);
+}
+.forms-title{
+    margin: auto;
+    width: fit-content;
+}
+.forms-title p{
+    text-align: left;
+    margin-left: 10px;
 }
 .forms-data{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 40px auto;
 }
 .forms-data input{
-    margin: 20px 0;
-}
-.inputArea input{
-    width: 250px;
-    height: 20px;
+    margin-bottom: 2em;
+    border:none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.4);
     font-size: 15px;
-    border: 1px solid var(--blue2);
-    padding: 2px;
-    border-radius: 5px;
+    padding-bottom: 6px;
+    
+}
+.forms-data input:focus{
+    outline: none;
+}
+.forms-data .razao{
+    align-self: flex-start;
+    text-align: left;
+}
+.razao p{
+    font-size: 10px;
+}
+.razao select{
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    width: 70vw;
+    padding-bottom: 6px;
+    opacity: 0.7;
 }
 
-
-.forms input[type="reset"]{
+/*Botão RESET*/
+.forms input[type="submit"]{
     padding: 10px;
     width: 150px;
     font-size: 20px;
@@ -227,7 +251,7 @@
     cursor: pointer;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
-.forms input[type="reset"]:hover{
+.forms input[type="submit"]:hover{
     background-color: var(--blue3);
     border: 1px solid var(--blue3);
     color: #8e9aaf;

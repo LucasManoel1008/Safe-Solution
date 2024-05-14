@@ -244,18 +244,27 @@
     </section>
 
     <form class="forms">
-        <h1>Ainda dúvidas? Nos envie e responderemos!</h1>
-        <div class="forms-data">
-            <div class="inputArea">
-                <label for="fistName">Nome ou Apelido:</label>
-                <input type="text" name="name" id="firstName">
-            </div>
-            <div class="inputArea">
-                <label for="mail">email de contato:</label>
-                <input type="email" name="email" id="email">
-            </div>
+        <div class="forms-title">
+            <h1>Ainda dúvidas? Entre em Contato Conosco!</h1>
+            <p>*Entrada Obrigatória</p>
         </div>
-        <input id="submit" type="reset" value="enviar">
+            <div class="forms-data">
+                <input type="text" placeholder="*NOME" onfocus="focusName()" id="name">
+                <input type="text" placeholder="*SOBRENOME">
+                <input type="email" placeholder="*EMAIL">
+                <input type="tel" placeholder="TELEFONE">
+                <input type="text" placeholder="CIDADE">
+                <div class="razao">
+                <p>*Assunto</p>
+                <select name="Assunto" id="Assunto">
+                    <option value="Assunto" selected>*ASSUNTO</option>
+                    <option value="Reclamacao" >RECLAMAÇÃO</option>
+                    <option value="Elogio" >ELOGIO</option>
+                    <option value="Informacao" >INFORMAÇÃO</option>
+                </select>
+            </div>
+            </div>
+            <input id="submit" type="submit" value="enviar">
     </form>
 
     <!--Nosso rodapé inteiro, atualmente ele está responsivo, mas não da maneira certa,
