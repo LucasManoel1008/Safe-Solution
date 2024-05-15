@@ -210,6 +210,7 @@
     flex-direction: column;
     width: 70vw;
     margin: 40px auto;
+
 }
 .forms-data input{
     margin-bottom: 2em;
@@ -256,6 +257,19 @@
     border: 1px solid var(--blue3);
     color: #8e9aaf;
     transition: background-color 0.5s, border 0.5s, color 0.5s;   
+}
+
+.textarea{
+    margin: 2em 0 10px 0;
+}
+.textarea textarea{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    padding-bottom: 6px;
+    width: 70vw;
 }
 
 @media screen and (max-width: 1200px){

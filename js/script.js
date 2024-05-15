@@ -36,5 +36,9 @@ function voltartopo(){
         document.documentElement.scrollTop = 0; // Para outros navegadores
     }
 }
+function ajustarTexto(){
+    document.getElementById('mensagem').style.height ='auto';
+    document.getElementById('mensagem').style.height =mensagem.scrollHeight + 'px';
+}
 
     
