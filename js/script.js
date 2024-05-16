@@ -32,8 +32,8 @@ function voltartopo(){
     check = 'true'
     }
     if(check = false){
-        document.body.scrollTop = 0; // Para navegadores Safari
-        document.documentElement.scrollTop = 0; // Para outros navegadores
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 }
 function ajustarTexto(){

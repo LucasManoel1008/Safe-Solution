@@ -62,9 +62,13 @@ body, html{
 }
 
 #logo-header img{
-    width: 200px;
+    width: 240px;
+
 }
 .elementsHeader-desktop{
+    display: none;
+}
+.left-header-desktop{
     display: none;
 }
 .menuOculto a{
@@ -163,6 +167,9 @@ body, html{
     .elementsHeader-desktop{
         display: inline;
     }
+    .left-header-desktop{
+        display: inline;
+    }
     #active{
         padding: 7px;
         border-radius: 4px;
@@ -171,13 +178,34 @@ body, html{
         background-color: transparent;
         border: 2px solid var(--blue);
     }
-    .elementsHeader-desktop a{
+    .elementsHeader-desktop a , .left-header-desktop a{
         text-decoration: none;
         color: var(--blue3);
         font-weight: bolder;
         margin-right: 10px;
         padding:7px;
+        font-size: 14px;
     }
+    .left-header-desktop .login{
+        border: 1px solid var(--blue3);
+        border-radius: 4px;
+        transition: background-color 0.5s;
+    }
+    .left-header-desktop .registro{
+        color: white;
+        background-color: var(--blue3);
+        border-radius: 4px;
+        transition: opacity 0.5s;
+    }
+    .left-header-desktop .registro:hover{
+        opacity: 0.8;
+        transition: opacity 0.5s;
+    }
+    .left-header-desktop .login:hover{
+        background-color: #f1f1f1;
+        transition: background-color 0.5s;
+    }
+    
     .elementsHeader-desktop a:hover{
         opacity: 0.8;
         border-radius: 4px;
