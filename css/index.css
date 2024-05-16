@@ -13,6 +13,9 @@
 .align-text{
     text-align: center;
 }
+body{
+    margin: 0 auto;
+}
 
 /*Fim das formatações*/
 
@@ -27,6 +30,7 @@
 
 .main-image img{
     width: 100.46vw;
+    
 }
 
     
@@ -60,6 +64,7 @@
 }
 
 .title-main-text{
+    margin: 20px auto;
     margin-top: 70px;
     font-size:30px;
     color:var(--blue3);
@@ -71,18 +76,20 @@
     gap: 40px;
     text-align: center;
     align-items: center;
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
     font-size: 15px;
     max-width: 80%;
     justify-content: space-between;
     grid-gap: 50px;
 
 }
+.text-body .Text{
+    margin: 20px auto;
+}
 .Text{
     margin: 20px 40px 20px 0;
     border: dashed 3px var(--blue4);
     max-width: 75%;
-    align-items: center;
     align-self: center;
     height: 500px;
 }

@@ -56,14 +56,13 @@ body, html{
 .elements-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
-
+    justify-content: space-around;
+    margin: 1rem auto;
+    
 }
 
 #logo-header img{
-    width: 240px;
-
+    width: 250px;
 }
 .elementsHeader-desktop{
     display: none;
