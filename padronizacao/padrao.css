@@ -19,7 +19,8 @@
     padding: 0;
     
 }
-body, html{
+
+body{
     font-family: "montserrat";
     height: 100%;
 }
@@ -49,27 +50,36 @@ body, html{
     color: var(--blue2);
 
 }
-
 .header .menuOculto{
     font-weight: bold;
 }
 
 .elements-header{
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem auto;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 7px 10px;
+    
 }
 
-#logo-header img{
-    width: 250px;
-    margin-right: 20px
+
+.left-header-desktop a , .elementsHeader-desktop a{
+    margin: 0 10px;
+    text-align: center;
 }
+.elements-header #logo-header img{
+    width: 250px;
+}
+
 .elementsHeader-desktop{
     display: none;
+    justify-content: flex-start;
+    
 }
 .left-header-desktop{
     display: none;
+    justify-content: flex-end;
 }
 .menuOculto a{
     text-decoration: none;
@@ -164,14 +174,16 @@ body, html{
     width: clamp(30px,50%,80px);
 }
 @media screen and (min-width:768px) {
-    .elementsHeader-desktop{
-        display: inline;
+    .logo{
+        flex-grow: 1;
     }
-    .left-header-desktop{
-        display: inline;
+    .elementsHeader-desktop, .left-header-desktop{
+        display: flex;
+        align-items: center;
+
     }
+
     #active{
-        padding: 7px;
         border-radius: 4px;
         opacity: 0.8;
         color: var(--blue3);
@@ -182,9 +194,8 @@ body, html{
         text-decoration: none;
         color: var(--blue3);
         font-weight: bolder;
-        margin-right: 10px;
-        padding:7px;
-        font-size: 14px;
+        padding:5px;
+        font-size: 12px;
     }
     .left-header-desktop .login{
         border: 1px solid var(--blue3);

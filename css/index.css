@@ -18,7 +18,7 @@
 /*Fim das formatações*/
 
 
-.main-image{
+/* .main-image{
     margin: 0;
     left: -5px ;
     width: 100.4vw;
@@ -59,26 +59,33 @@
 .btn-main:hover{
     background-color: var(--blue3);
     transition: background-color 0.2s ease-in;
+} */
+.main-content{
+    display: grid;
+    margin: 20px auto;
+    align-self: center;
+    align-items: center;
 }
 
 .title-main-text{
-    margin: 20px auto;
     margin-top: 70px;
     font-size:30px;
     color:var(--blue3);
     text-align: center;
 }
+
 .text-body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 40px;
+    gap: 20px;
     text-align: center;
-    align-items: center;
-    margin: 50px auto;
+
+    margin: 20px auto;
     font-size: 15px;
     max-width: 80%;
     justify-content: space-between;
-    grid-gap: 50px;
+    grid-gap: 20px;
+    
 
 }
 .text-body .Text{
