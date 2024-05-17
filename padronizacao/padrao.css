@@ -53,16 +53,17 @@ body, html{
 .header .menuOculto{
     font-weight: bold;
 }
+
 .elements-header{
     display: flex;
-    align-items: center;
     justify-content: space-around;
     margin: 1rem auto;
-    
+    gap: 50px;
 }
 
 #logo-header img{
     width: 250px;
+    margin-right: 20px
 }
 .elementsHeader-desktop{
     display: none;
@@ -162,7 +163,7 @@ body, html{
     margin-right: 30px;
     width: clamp(30px,50%,80px);
 }
-@media screen and (min-width:720px) {
+@media screen and (min-width:768px) {
     .elementsHeader-desktop{
         display: inline;
     }
