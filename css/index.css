@@ -18,7 +18,7 @@
 /*Fim das formatações*/
 
 
-/* .main-image{
+.main-image{
     margin: 0;
     left: -5px ;
     width: 100.4vw;
@@ -59,7 +59,7 @@
 .btn-main:hover{
     background-color: var(--blue3);
     transition: background-color 0.2s ease-in;
-} */
+} 
 .main-content{
     display: grid;
     margin: 20px auto;
