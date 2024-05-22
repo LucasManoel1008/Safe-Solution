@@ -6,6 +6,7 @@
     --blue4:#1E2D3F;
     --white: #EDF2F4;
 }
+
 /*Formatações para evitar css-inline*/
 .blue2{color: #234063}
 .text-underline{text-decoration: underline;}
