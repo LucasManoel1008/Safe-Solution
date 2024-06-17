@@ -27,8 +27,8 @@ body{
 #botaoScroll{
     position: fixed;
     border: none;
-    background-color: var(--blue2);
-    padding:7px 15px;
+    background-color: var(--blue);
+    padding:7px 20px;
     border-radius: 20px;
     color: white;
     font-size: 2em;
