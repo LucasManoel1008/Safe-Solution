@@ -45,22 +45,29 @@
 .btn-main{
     position: absolute;
     top: 60%;
-    left: calc(100% - 250px);
+    left: calc(100% - 270px);
     width: calc(200px + 1rem);
     height: 50px;
     font-size: 1.9rem;
+    text-align: center;
     cursor: pointer;
     background-color: var(--blue4);
     border: transparent;
     border-radius: 20px;
     color: var(--white);
     font-weight: 800;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s, height 0.2s, width 0.2s ease-in;
+
 }
 .btn-main:hover{
     background-color: var(--blue3);
-    transition: background-color 0.2s ease-in;
-} 
+    width: 220px;
+    transition: background-color 0.2s, width 0.2s ease-in;
+    
+}
+.btn-main p:hover{
+    padding-left: 20px;
+}
 .main-content{
     display: grid;
     margin: 20px auto;
