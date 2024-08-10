@@ -19,11 +19,17 @@
     padding: 0;
     
 }
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
 
 body{
     font-family: "montserrat";
     height: 100%;
 }
+
+/* Botão que da um scroll rápido para cima */
 #botaoScroll{
     position: fixed;
     border: none;
@@ -44,6 +50,8 @@ body{
     background-color: var(--blue4);
     transition: all 0.2s;
 }
+
+
 #active{
     border: 2px solid var(--blue3);
     background-color: var(--blue3);
@@ -61,6 +69,7 @@ body{
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 7px 10px;
+    height: 70px;
     
 }
 
@@ -96,7 +105,7 @@ body{
     color: var(--blue2);
     background-color: #234063;
 }
-.btn-close{
+.btn-close-x{
     position: absolute;
     top: 25px;
     right: 25px;
