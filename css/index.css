@@ -21,7 +21,11 @@
 /*Botao Junte-se a nós*/
     .joinUs{
         max-width: 90%;
-        margin: auto auto;
+        margin: 20px auto;
+        border:none;
+        border-radius: 2px;
+        font-size: 20px;
+        padding: 10px;
     }
 
 
