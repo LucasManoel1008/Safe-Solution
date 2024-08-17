@@ -70,6 +70,7 @@ body{
     padding: 7px 10px;
     height: 70px;
     
+    margin: 0 auto;  
 }
 
 
@@ -182,7 +183,12 @@ body{
     margin-right: 30px;
     width: clamp(30px,50%,80px);
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:700px){
+    .elements-header{
+        max-width: 700px;
+    }
+}
+@media screen and (min-width:993px) {
     .logo{
         flex-grow: 1;
     }
@@ -194,6 +200,7 @@ body{
         white-space: nowrap; /*Evita quebra de linhas*/
         display: grid;
         grid-template-columns: 1fr auto 1fr;
+        max-width: none;
     }
     #active{
         border-radius: 4px;
