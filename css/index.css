@@ -27,11 +27,15 @@
         font-size: 20px;
         padding: 10px;
         background-color: var(--blue3);
+        
     }
+    
     .joinUs:hover{
         background-color: var(--blue4);
     }
     
+
+    /* Divulgação de serviços */
 
 
 /* Divulgação do aplicativo */

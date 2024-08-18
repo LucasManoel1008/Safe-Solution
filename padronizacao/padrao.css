@@ -99,11 +99,10 @@ body{
     display: block;
     margin-bottom: 20px;
     margin-top: 20px;
-    transition: 0.4s;
+    transition: 0.1s;
 }
 .menuOculto a:hover{
     color: var(--blue2);
-    background-color: #234063;
 }
 .btn-close-x{
     position: absolute;

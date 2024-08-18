@@ -1,7 +1,4 @@
-/* Esse primeiro está vinculado ao botão na mesma região da imagem, ele abre o menu.
-    O segundo esta vínculado ao segundo botão, ele fecha o menu.*/
-    
-    window.onscroll = function() {botaoScroll()};
+window.onscroll = function() {botaoScroll()};
 
     /*NÃO ALTERAR NADA NESSES DOIS CÓDIGOS*/
 
