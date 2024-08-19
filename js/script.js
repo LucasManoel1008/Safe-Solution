@@ -1,7 +1,8 @@
 window.onscroll = function() {botaoScroll()};
 
-    /*NÃO ALTERAR NADA NESSES DOIS CÓDIGOS*/
 
+
+//Abrir e fechar o menu lateral
 function abrirNav(){
     document.getElementById('menuOculto').style.marginLeft = "0";
     document.getElementById('menuOculto').style.transition = "0.5s";
@@ -12,6 +13,7 @@ function fecharNav(){
     document.getElementById('menuOculto').style.marginLeft = "-100vh";
 }
 
+//Botão de voltar ao topo
 function botaoScroll(){
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.getElementById("botaoScroll").style.display = "block";
@@ -33,9 +35,12 @@ function voltartopo(){
         document.documentElement.scrollTop = 0;
     }
 }
+
+//Ajuste de tamanho automático na caixa de texto
 function ajustarTexto(){
     document.getElementById('mensagem').style.height ='auto';
     document.getElementById('mensagem').style.height =mensagem.scrollHeight + 'px';
 }
+
 
     
