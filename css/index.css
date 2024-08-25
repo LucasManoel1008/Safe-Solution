@@ -12,6 +12,9 @@ html, body{
 a{
     text-decoration: none;
 }
+strong{
+    color: var(--blue3);
+}
 
 
 /*Formatações para evitar css-inline*/
@@ -182,7 +185,7 @@ a{
 
 /* Barra de pesquisa + Categorias */
 .categorias{
-
+    
     width: clamp(300px, 700px, 90%);
     margin: 0 auto;
 
@@ -192,16 +195,21 @@ a{
     margin-bottom: 30px !important; 
 }
 .links{
+    margin-top: 20px;
     justify-content: center;
-}
-
-.links a{
-    margin-left: 10px;
+    gap: 10px;
 }
 
 
+
+
+.servicos-links a{
+    margin: 0 5px;
+}
   
-
+.servicos-links{
+    
+}
 
 /*Perguntas frequentes*/
 .FAQ{
@@ -310,22 +318,15 @@ a{
 /*Botão RESET*/
 .forms input[type="submit"]{
     padding: 10px;
-    width: 150px;
-    font-size: 20px;
     margin-left: calc(100% - 200px);
     background-color: var(--blue4);
     border: 1px solid var(--blue4);
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.5s, border 0.5s, color 0.5s;
+   
 }
-.forms input[type="submit"]:hover{
-    background-color: var(--blue3);
-    border: 1px solid var(--blue3);
-    color: #8e9aaf;
-    transition: background-color 0.5s, border 0.5s, color 0.5s;   
-}
+
 
 .textarea{
     margin: 2em 0 10px 0;
@@ -341,7 +342,12 @@ a{
 }
 
 
-
+@media screen and (max-width:620px){
+    .servicos-links{
+        max-width: clamp(300px, 40%, 500px);
+    }
+    
+}
 @media  screen and (min-width: 720px) {
     .joinUs{
         max-width: 700px;
