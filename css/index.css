@@ -56,7 +56,7 @@ a{
     }
     .firstImage .leftContent h4{
         color: #234063;
-        font-weight: bolder;
+        font-weight: bold;
     }
     .firstImage .leftContent p{
         opacity: 0.7;
@@ -68,6 +68,10 @@ a{
         cursor: pointer;
         margin-top: 30px;
        
+    }
+    .firstImage .rightContent img{
+       width: 300px;
+        
     }
     
 
@@ -86,13 +90,13 @@ a{
     max-height: 600px;
 }
 .applicationMobile h4{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 /* Formatações sobre os 4 elementos que informam o objetivo no site */
 .title-main-text{
     margin-top: 70px;
-    font-weight: bolder;
+    font-weight: bold;
     color:var(--blue3);
     text-align: center;
 }
@@ -129,11 +133,9 @@ a{
 .list{
     list-style-position: inside;
     text-align: start;
-}
-.list li {
-    margin-bottom: 20px;
     
 }
+
 .list li::marker{
     color: var(--blue3);
 }
@@ -174,11 +176,14 @@ a{
 .peopleName{
     color: var(--blue3);
     margin-bottom: 30px;
+    font-size: 1.5rem;
 }
+
 
 /* Barra de pesquisa + Categorias */
 .categorias{
-    width: clamp(300px, 90%, fit-content);
+
+    width: clamp(300px, 700px, 90%);
     margin: 0 auto;
 
 }
@@ -186,19 +191,16 @@ a{
 .categorias h4{
     margin-bottom: 30px !important; 
 }
-.relevantes{
-    margin: 0 auto;
+.links{
     justify-content: center;
 }
-.relevantes span{
-    color: var(--blue3);
-    font-weight: bolder;
+
+.links a{
+    margin-left: 10px;
 }
 
 
-
-
-
+  
 
 
 /*Perguntas frequentes*/
@@ -346,12 +348,26 @@ a{
     }
 }
 
+@media screen and (min-width: 993px){
+    h4{
+        font-size: 36px;
+    }
+    .firstImage .leftContent p{
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .text-body{
         grid-template-columns: repeat(1,1fr);
     }
     .Text{
         height: fit-content;
+    }
+    @media screen and (max-width: 400px){
+        .firstImage .rightContent img{
+            width: 200px;
+        }
     }
 }
 
