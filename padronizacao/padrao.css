@@ -9,6 +9,16 @@
 .blue2{color: #234063}
 .text-underline{text-decoration: underline;}
 .bold{font-weight: bolder;}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.loaded .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /*Fim das formatações*/
 
@@ -69,6 +79,7 @@ body{
     background-color: white;
     box-shadow: 6px 6px 10px -1px rgba(45, 46, 66, 0.8),
                 -6px -6px 10px -1px rgba(35, 64, 99, 0.40) ;
+    z-index: 997;
 }
 .fixedHeader{
     position: fixed;

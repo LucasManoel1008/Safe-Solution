@@ -8,7 +8,9 @@ function fixedheader(){
     }
 }
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add('loaded');
+});
 
 
 //Abrir e fechar o menu lateral
