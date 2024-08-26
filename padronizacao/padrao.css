@@ -60,6 +60,18 @@ body{
 }
 .header .menuOculto{
     font-weight: bold;
+
+}
+.header{
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    box-shadow: 6px 6px 10px -1px rgba(45, 46, 66, 0.8),
+                -6px -6px 10px -1px rgba(35, 64, 99, 0.40) ;
+}
+.fixedHeader{
+    position: fixed;
 }
 
 .elements-header{
@@ -69,7 +81,6 @@ body{
     align-items: center;
     padding: 7px 10px;
     height: 70px;
-    
     margin: 0 auto;  
 }
 
@@ -159,6 +170,9 @@ body{
 .footer .servicos{
     background-color: none;
 }
+.footer .servicos .container1{
+    text-align: left ;
+}
 .footer .servicos ul a {
     display: inline;
     color: #234063;
@@ -236,5 +250,13 @@ body{
     .menuOculto{
         display: none;
     }      
+
+    .footer .servicos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+   
     }
     

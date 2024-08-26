@@ -1,5 +1,14 @@
 window.onscroll = function() {botaoScroll()};
 
+function fixedheader(){
+    var header = document.getElementById('header');
+    
+    if (document.body.scroll|Top > 400 || document.documentElement.scrollTop > 400 ){
+        header.classList.add('fixedHeader');
+    }
+}
+
+
 
 
 //Abrir e fechar o menu lateral

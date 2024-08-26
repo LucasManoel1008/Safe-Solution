@@ -27,10 +27,10 @@
         <!-- Menu versão mobile -->
         <div class="menuOculto" id="menuOculto">
             <button class="btn-close-x" onclick="fecharNav()">&times;</button>
-            <a href="" id="active">AJUDA</a>
-            <a href="">SERVIÇOS</a>
-            <a href="">SOBRE NÓS</a>
-            <a href="">ENTRAR</a>
+            <a href="#" id="active">AJUDA</a>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">SOBRE NÓS</a>
+            <a href="#">ENTRAR</a>
         </div>
 
         <!-- Menu da Versão Desktop -->
@@ -39,23 +39,23 @@
             <img src="img/Menu.svg" alt="Menu" id="elements-header" style="font-size: 30px; cursor: pointer;" onclick="abrirNav()">
 
             <div class="elementsHeader-desktop">
-                <a href="">SERVIÇOS</a>
-                <a href="">SOBRE NÓS</a>
-                <a href="" id="active">AJUDA</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">SOBRE NÓS</a>
+                <a href="#" id="active">AJUDA</a>
             </div>
             <div class="logo">
-                <a href="" id="logo-header"><img src="img/Logo.png" alt=""></a>
+                <a href="#" id="logo-header"><img src="img/Logo.png" alt=""></a>
             </div>
             <div class="left-header-desktop">
-                <a href="" class="login">ENTRAR</a>
-                <a href="" class="registro">REGISTRO</a>
+                <a href="#" class="login">ENTRAR</a>
+                <a href="#" class="registro">REGISTRO</a>
             </div>
         </div>
     </header>
 
 
       <!-- Botão disponível apenas no mobile. Junte-se a nós -->
-      <button class="btn-primary d-lg-none btn-block joinUs">Junte-se a nós <img src="img/Fast forward.png" alt=""></button>
+      <button class="btn-primary d-lg-none btn-block joinUs">Seja Provedor <img src="img/Fast forward.png" alt=""></button>
 
     <!--Área com todos os textos do corpo do site, Cada div text é um texto com seu icone,
     falta alterá-lo de acordo com o novo figma, está totalmente responsivo ja.-->
@@ -307,8 +307,14 @@
         <!--Nosso rodapé inteiro, atualmente ele está responsivo, mas não da maneira certa,
         ao chegar a uns 720px (largura não precisa) ele precisa ficar em fileira, e não coluna-->
         <footer class="footer">
-            <div class="servicos">
-               <ul class="container1 d-flex flex-column mt-3" >               
+            <div class="servicos mt-4">
+                <ul class="mt-4 container1">
+                    <a href="#"> <img src="img/Logo (Reserva).png" width="200" alt="LOGO"></a>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Seja provedor</a></li>
+                </ul>
+               <ul class="container2 d-flex flex-column mt-3" >               
                     <strong class="pb-2">Serviços</strong>
                     <li><a href="#">Arquitetura</a></li>
                     <li><a href="#">limpeza</a></li>
@@ -317,7 +323,7 @@
                     <li><a href="#">Encanador</a></li>
                </ul>
                
-               <ul class="container2 d-flex flex-column mt-3">
+               <ul class="container3 d-flex flex-column mt-3">
                     <strong class="pb-2">Informações</strong>
                     <li><a href="#quemSomos">Sobre nós</a></li>
                     <li><a href="#ajuda">Ajuda</a></li>
@@ -325,11 +331,30 @@
 
                </ul>
             
-               <ul class="container3 d-flex flex-row mt3">
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+               <ul class="container4 d-flex flex-row mt-3">
+
+                    <a href="#">
+                        <img src="img/redesSociais/Facebook.svg" width="30" alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/redesSociais/Instagram.svg" width="30" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/redesSociais/LinkedIn.svg"  width="30" alt="LinkedIn">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/redesSociais/x.svg"  width="30"  alt="x">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/redesSociais/zap.svg" width="30" alt="Whatsapp">
+                    </a>
                </ul>
 
-               <a href="#" class="ml-4"> <img src="img/Logo (Reserva).png" width="200" alt="LOGO"></a>
+              
             </div>
           
                <span class="align-text">© 2024 Safe Solutions. Todos os direitos reservados.</span>
